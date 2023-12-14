@@ -1,0 +1,175 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.container-fluid .row{
+    margin: 0;
+}
+
+/* Navbar */
+
+.navbar{
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.navbar-nav{
+    margin: auto;
+}
+
+.navbar-brand{
+    font-weight: bold;
+}
+
+.navbar-ligth .navbar-nav a.navbar-link{
+    color: #333;
+    letter-spacing: 1px;
+}
+
+/* Botão de adicionar*/
+
+.add-div{
+    background-color: #3476e2;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-right: 25px;
+    padding-right: 25px;
+}
+
+.fas.fa-plus{
+    color: #fff;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+#add-link:focus,#add-link:hover{
+    text-decoration: none;
+}
+
+/* Search */
+
+.fas.fa-search{
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.search-div{
+    position: relative;
+    padding: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+/* Lista de tarefas */
+
+.list-div{
+    padding: 0;
+}
+
+.task-list{
+    padding-left: 0;
+}
+
+.task-item{
+    list-style: none;
+    font-size: 20px;
+    height: 50px;
+    padding: 0 15px;
+    padding-top: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.task-item.done{
+    background-color: #ccc;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:focus,a:hover{
+    text-decoration: underline;
+}
+
+.fas.fa-trash,.fas.fa-edit, .fas.fa-check{
+    cursor: pointer;
+    margin: 5px;
+    font-size: 20px;
+    float: right;
+}
+
+.fas.fa-trash{
+    color: red;
+}
+
+.fas.fa-edit{
+    color:rgb(51, 216, 51);
+}
+
+.fas.fa-check{
+    color: #ccc;
+}
+
+.done .fa-check{
+    color: #3476e2;
+}
+
+/* Footer */
+
+footer{
+    background-color: #333;
+    height: 10vh;
+    border-top: 2px solid  #202020;
+}
+
+footer p{
+    color: #f5f5f5;
+    text-align: center;
+    top: 35%;
+    position: relative;
+}
+
+/* Messages */
+
+ul.messages{
+    padding: 0;
+}
+
+ul.messages li{
+    list-style: none;
+}
+
+/* Paginação */
+
+.pagination{
+    margin-bottom: 20px;
+}
+
+.step-links{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.step-links .currente{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Login */
+
+.auth-card{
+    margin-bottom: 30px;
+}
