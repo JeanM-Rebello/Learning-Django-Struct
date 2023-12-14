@@ -4,6 +4,20 @@
 
 <div class="offset-1 col-10 list-div">
     <h1>Lista de Tarefas</h1>
+    <div class="container dashboard">
+        <div class = "col-4 dashboard-box"  id="dashboard-lastdays">
+            <h4>Finalizado nos últimos 30 dias</h4>
+            <span>{{tasksrecently}}</span>
+        </div>
+        <div class = "col-4 dashboard-box"  id="dashboard-feito">
+            <h4>Tarefas finalizadas</h4>
+            <span>{{tasksdone}}</span>
+        </div>
+        <div class = "col-4 dashboard-box"  id="dashboard-fazendo">
+            <h4>Tarefas em Andamento</h4>
+            <span>{{tasksdoing}}</span>
+        </div>
+    </div>
     <a id="add-link" href="newtask/">
         <div class="add-div">
             <i class="fas fa-plus"></i> Adicionar tarefa
@@ -18,7 +32,11 @@
 
     <div class = "col-12 filter-div">
         <span>Filtrar por:</span>
-        <select name="" id="filter" class=""></select>
+        <select name="filter" id="filter" class="form-control">
+            <option value="">Escolha uma opção</option>
+            <option value="feito">Tarefas Concluidas</option>
+            <option value="fazendo">Tarefas em Andamento</option>
+        </select>
     </div>
 
     {% if messages %}
